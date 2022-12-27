@@ -1,4 +1,29 @@
-#wrap {
-  min-width: 1200px;
-  overflow: hidden;
+.header {
+  position: fixed;
+  background: rgb(255, 167, 167);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100px;
+}
+.header > .container {
+  width: 100%;
+  height: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+.header-top {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-util {
+  font-size: 0;
 }/*# sourceMappingURL=style.css.map */

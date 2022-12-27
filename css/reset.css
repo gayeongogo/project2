@@ -152,9 +152,7 @@ input[type=tel], input[type=time], input[type=text], input[type=password], input
   border-radius: 4px;
   vertical-align: middle;
 }
-input[readonly], input[disabled] {
-  /* background-color: $color-f9f9f9; */
-}
+
 input[readonly]:focus, input[disabled]:focus {
   border-color: #e6e6e6;
   outline: 0;
