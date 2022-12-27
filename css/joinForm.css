@@ -1,0 +1,23 @@
+strong{font-weight: normal;}
+legend{display: none;}
+h1{font-size: 20px; border-bottom: 2px solid #000; padding-bottom: 10px;}
+.container{width: 1200px; margin: 50px auto;}
+fieldset{border: none; margin: 0; padding: 0; font-weight: normal;}
+ul{list-style: none; padding-left: 0;}
+li{margin-bottom: 30px;}
+input, select{border: 1px solid #e6e6e6;}
+input::placeholder{color: rgb(146, 146, 146);}
+#tel{width: 150px;}
+i{display: inline-block;
+    width: 8px;
+    height: 1px;
+    margin: 0 6px;
+    background-color: #999;
+    vertical-align: middle;}
+.w200{display: inline-block; width: 190px; font-size: 16px; box-sizing: border-box;}
+.sq{height: 42px; box-sizing: border-box; padding: 0 10px; font-size: 16px; border-radius: 5px;}
+.w, #radioArea{display: inline-block; width: 400px;}
+span{display: inline-block; max-width: 580px; color: #666; font-size: 13px; padding-left: 10px;}
+li:last-child{padding-top: 30px; border: none; text-align: center;}
+#submit{display: inline-block; width: 180px; height: 60px; font-size: 18px; color: #fff; background: #dc000c; border-color: #dc000c; border-radius: 40px; text-align: center;}
+button{display: inline-block; height: 40px; width: 90px; border: none; border-radius: 5px; font-size: 16px; color: #fff; background: #666; margin-left: 5px;}
