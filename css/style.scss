@@ -1,9 +1,27 @@
 @charset 'utf-8';
-
-$header-full-type : '.header.full-type';
-$gnb-h: 680px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 
+/* 공통요소속성 */
+.blind{
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    text-indent: -9999px;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+
+body{
+    font-family: 'Roboto', 'Noto Sans KR', Arial, verdana,  sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+/* 헤더부분 */
 .header{
     position: fixed;
     background: rgb(255, 167, 167);
@@ -30,7 +48,9 @@ $gnb-h: 680px;
         justify-content: flex-end;
     }
     &-btm{
-        
+        width: 100%;
+        height: 60px;
+        display: flex;
     }
     &-dimmed{
         //js
@@ -38,10 +58,161 @@ $gnb-h: 680px;
 }
 .header-util{
     font-size: 0;
+    .search{
+        vertical-align: middle;
+        margin-right: 27px;
+    }
+    a{
+        display: inline-block;
+        position: relative;
+        font-size: 14px;
+        color: #666;
+        padding: 0 8px;
+        vertical-align: middle;
+        &+a::before{
+            position: absolute;
+            left: 0;
+            top: 5px;
+            content: "";
+            width: 1px;
+            height: 10px;
+            background: #e6e6e6;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+    }
 }
 .header-logo{
-    
+    >a{
+        display: block;
+        width: 115px;
+        height: 44px;
+        background: url(../images/logo.svg) no-repeat center center/100%;
+    }
 }
 .gnb{
+    flex-grow: 1;
+    padding-left: 25px;
+    &-1depth{
+        display: flex;
+        align-items: center;
+    }
+    &-1depth-item{
+        float: left;
+        height: 100%;
+        margin-right: 35px;
+    }
+    &-1depth-link{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 0 5px 0;
+        box-sizing: border-box;
+        letter-spacing: -0.17px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #000;
+        &.on{
+            //js
+        }
+    }
+    //바로가기아이콘
+    &-1depth-link--etc::after{
+        display: inline-block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url(../images/ico_header_link_black.svg) no-repeat center/20px;
+        vertical-align: -3px;
+        margin-left: 3px;
 
+        
+    }
+    &-inner{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        height: 500px;
+        background: skyblue;
+        border-top: 1px solid #e6e6e6;
+        &-ly{
+            position: relative;
+            width: 1200px;
+            height: 450px;
+            top: 50px;
+            background: yellowgreen;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2;
+        }
+        ul{
+            position: absolute;
+            top: 0;
+            li{
+                &+li{
+
+                }
+                >a{
+
+                }
+            }
+        }
+    }
+    .is-line{
+        //js - 밑줄
+    }
+    .is-arrow{
+        //js - 화살표
+    }
+    &-2depth{
+    }
+    &-3depth{
+
+    }
+    &-4depth{
+
+    }
+    &-banner{
+        .img{
+            img{
+
+            }
+            .tit{
+
+            }
+            .txt{
+                
+            }
+        }
+    }
+    &-right{
+        display: flex;
+        align-items: center;
+        margin-left: auto; //왼쪽에 가장 큰 마진->우측으로 붙음
+        .gnb-1depth-item{
+            margin-right: 25px;
+        }
+        .gnb-1depth-link{
+            font-size: 14px;
+        }
+    }
+    &-1depth-btn{
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 2.14;
+        letter-spacing: -0.14px;
+        min-width: 80px;
+        height: 30px;
+        padding: 0 10px;
+        border-radius: 4px;
+        background: #dc000c;
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        margin-left: 5px;
+        &.black{background: #000;}
+    }
 }

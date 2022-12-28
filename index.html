@@ -12,12 +12,11 @@
         <meta name='Description' content='캐논코리아 공식 웹사이트, 사무기기, 카메라, 복합기, 프린터, 포토프린터 '>
         <meta name='Author-Date' content='2022/12/08'>
         <meta name='Robots' content='index,follow'>
-    
-        
-        <link rel='stylesheet' href='css/mixin.css'>
+
+
+        <link rel='stylesheet' href='css/style.css'>
         <link rel='stylesheet' href='css/util.css'>
         <link rel='stylesheet' href='css/reset.css'>
-        <link rel='stylesheet' href='css/style.css'>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         
         <script src="./js/script.js" defer></script>
@@ -45,14 +44,14 @@
                 </div>
                 <div class="header-btm">
                     <h1 class="header-logo">
-                        <a href="#"><span class="blind">캐논코리아 주식회사</span></a>
+                        <a href="index.html"><span class="blind">캐논코리아 주식회사</span></a>
                     </h1>
                     <nav id="gnb" class="gnb">
                         <div class="gnb-1depth">
                             <ul class="gnb-left">
                                 <li class="gnb-1depth-item">
                                     <a href="#" class="gnb-1depth-link">컨슈머</a>
-                                    <div class="gnb-inner">
+                                    <div class="gnb-inner" style="height: 0;">
                                         <div class="gnb-inner-ly">
                                             <ul class="gnb-2depth">
                                                 <li class="gnb-2depth-item">
@@ -436,10 +435,10 @@
                                                     <a href="#" class="gnb-2depth-link">매장안내</a>
                                                 </li>
                                                 <li class="gnb-2depth-item">
-                                                    <a href="#" class="gnb-2depth-link gnb-1depth-link-etc">비즈몰</a>
+                                                    <a href="#" class="gnb-2depth-link gnb-1depth-link--etc">비즈몰</a>
                                                 </li>
                                                 <li class="gnb-2depth-item">
-                                                    <a href="#" class="gnb-2depth-link gnb-1depth-link-etc">파트너웹</a>
+                                                    <a href="#" class="gnb-2depth-link gnb-1depth-link--etc">파트너웹</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -593,13 +592,13 @@
                             </ul>
                             <ul class="gnb-right">
                                 <li class="gnb-1depth-item">
-                                    <a href="#" target="_blank" class="gnb-1depth-link gnb-1depth-link-etc">고객지원</a>
+                                    <a href="#" target="_blank" class="gnb-1depth-link gnb-1depth-link--etc">고객지원</a>
                                 </li>
                                 <li class="gnb-1depth-item">
-                                    <a href="#" target="_blank" class="gnb-1depth-link gnb-1depth-link-etc">e스토어</a>
+                                    <a href="#" target="_blank" class="gnb-1depth-link gnb-1depth-link--etc">e스토어</a>
                                 </li>
                                 <li class="gnb-1depth-item">
-                                    <a href="#" target="_blank" class="gnb-1depth-link gnb-1depth-link-etc">아카데미</a>
+                                    <a href="#" target="_blank" class="gnb-1depth-link gnb-1depth-link--etc">아카데미</a>
                                 </li>
                             </ul>
                             <ul class="btn-box">
@@ -608,6 +607,14 @@
                             </ul>
                         </div>
                     </nav>
+                </div>
+            </div>
+            <div class="total-search-wrap">
+                <div class="search-wrap">
+                    <button class="btn-close">
+                        <span class="blind">통합검색 닫기</span>
+                    </button>
+                    <div class="integrate-search-wrap"></div>
                 </div>
             </div>
         </header>
