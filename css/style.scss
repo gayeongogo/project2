@@ -1,6 +1,13 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
+
+$white: #fff;
+$white-opcity:rgba(255,255,255,.6);
+$orange: rgba(169,108,22, 1);
+$gray: #aaa;
+$black: #222;
+
 $header-height:100px;
 $gnb-h: 680px;
 $fw-b: 700;
@@ -20,9 +27,117 @@ $fw-b: 700;
     white-space: nowrap;
 }
 
-body{
-    font-family: 'Roboto', 'Noto Sans KR', Arial, verdana,  sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
+
+*{
+    font-family: 'Roboto', 'Noto Sans KR', Arial, verdana, sans-serif !important;
+}
+
+/* 모바일메뉴 */
+.mobile-menu{
+    position: fixed;
+    display: none;
+    top: 0; 
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: $black;
+    .container{
+        padding: 0 30px;
+        .mobile-menu-bar{
+            display: flex;
+            justify-content: space-between;
+            height: 68px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,.15);
+            .moda-logoBt-wrap{
+                width: 24px;
+                height: 24px; 
+                display: block;
+                a{
+                    display: block;
+                    img{
+                        width: 100%
+                    }
+                }
+            }
+            .mobile-appBar-wrap{
+                width: 22px; height: 14px; display: block;
+                a{
+                    display: block;
+                    position: relative;
+                    width:100%;
+                    height: 100%; 
+                    i{
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background: $white;
+                        top: 50%;
+                        margin-top: -1px;
+                        &.appbar-line1{transform: rotate(45deg)}
+                        &.appbar-line2{transform: rotate(-45deg)}
+                    }
+                }
+            }
+        }
+        .mobile-menu-list{
+            width: 100%;
+            ul{
+                width: 100%;
+                li{
+                    padding: 10px 0;
+                    border-bottom: 1px solid rgba(255,255,255,.15);
+                    a{
+                        color: $white-opcity;
+                        font-size: 16px;
+                        &:hover{color: $white}
+                    }
+                    &:nth-child(3) a{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        .mobile-menu-footer{
+            p{
+                color:$white-opcity;
+                font-size: 16px;
+                padding-top: 20px;
+                line-height: 140%;
+                font-weight: 500;
+            }
+            .mobile-menu-footer-button{
+                margin-top: 20px;
+            }
+            .mobile-menu-footer-sns{
+                margin-top: 20px;
+                span{
+                    display: inline-block;
+                    margin: 0 4px;
+                    a{
+                        width: 27px; 
+                        height: 27px;
+                        display: block;
+                        border-radius: 50%;
+                        background: $gray;
+                        text-align: center;
+                        transition: 0.3s;
+                        &:hover{
+                            background: $white;
+                        }
+                        i{
+                            display: block;
+                            color: $black;
+                            font-size: 15px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 /* 헤더부분 */
 .header{
@@ -42,6 +157,48 @@ body{
         background: rgba(0,0,0,.3);
         display: flex;
         flex-direction: column;
+    }
+    &-mobile-menu-bar{
+        display:none;
+        div{ 
+            display: flex; justify-content: space-between; 
+            position: relative;
+            background: #fff;
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+            top: 0;
+            left: 0;
+            padding: 0 20px;
+            box-sizing: border-box; 
+            .header-appBar-wrap{
+                width: 22px;
+                height: 14px;
+                a{ 
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    i{
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background: #000;
+                        left:0;
+                        &.appbar-line1{top:0}
+                        &.appbar-line2{top: 50%;}
+                        &.appbar-line3{top: 100%}
+                    }
+                }
+            }
+            .header-search-wrap{
+                a{color: #000;
+                    i{font-size: 20px;}
+                }
+            }
+        }
     }
     &-top{
         width: 100%;
@@ -104,6 +261,8 @@ body{
         background: url(../images/logo.svg) no-repeat center center/100%;
     }
 }
+
+/* 메뉴부분 */
 .gnb{
     flex-grow: 1;
     padding-left: 25px;
@@ -155,7 +314,7 @@ body{
         top: 100px;
         left: 0;
         right: 0;
-        height: 500px; //지우기
+        height: 600px;
         background: skyblue;
         border-top: 1px solid #e6e6e6;
         &-ly{

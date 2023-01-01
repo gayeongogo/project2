@@ -17,6 +17,7 @@
         <link rel='stylesheet' href='css/style.css'>
         <link rel='stylesheet' href='css/response.css'>
         <link rel='stylesheet' href='css/reset.css'>
+
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         
         <script src="./js/script.js" defer></script>
@@ -26,13 +27,74 @@
     </head>
 <body>
     <ul id="skip">
-		<li><a href="#header">헤더 바로가기</a></li>
-		<li><a href="#nav">메뉴 바로가기</a></li>
-		<li><a href="#content">내용 바로가기</a></li>
-	</ul>
+        <li><a href="#header">헤더 바로가기</a></li>
+        <li><a href="#nav">메뉴 바로가기</a></li>
+        <li><a href="#content">내용 바로가기</a></li>
+    </ul>
     <div id="wrap">
+        <div class="mobile-menu">
+            <div class="container">
+                <div class="mobile-menu-bar">
+                    <span class="moda-logoBt-wrap">
+                        <a href="index.html" class="logoBt" title="logo"><img src="./images/logo.svg" alt="Logo"></a>
+                    </span>
+                    <span class="mobile-appBar-wrap">
+                        <a href="javascript:" class="appbarCloseBt" title="appbarBt">
+                            <i class="appbar-line appbar-line1"></i>
+                            <i class="appbar-line appbar-line2"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="mobile-menu-list">
+                    <ul>
+                        <li><a href="#">HOTELS & RESORTS</a></li>
+                        <li><a href="#">DEALS</a></li>
+                        <li><a href="#">ORIGINAL EXPERIENCES</a></li>
+                        <li><a href="#">CULTURE</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-footer">
+                    <p>
+                        Become a member <br>
+                        to enjoy the best benefits! 
+                    </p>
+                    <div class="mobile-menu-footer-button">
+                        <button>JOIN</button>
+                        <button>LOGIN</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                    <div class="mobile-menu-footer-sns">
+                        <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+                        <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                        <span><a href="#"><i class="fab fa-pinterest-p"></i></a></span>
+                        <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                        <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                    </div>
+                </div>
+            </div>
+         </div>
         <header id="header" class="header">
             <div class="container">
+                <div class="header-mobile-menu-bar">
+                    <div>
+                        <span class="header-appBar-wrap">
+                            <a href="javascript:" class="appbarBt">
+                                <i class="appbar-line1"></i>
+                                <i class="appbar-line2"></i>
+                                <i class="appbar-line3"></i>
+                            </a>
+                        </span>
+                        <h1 class="header-logo-wrap"><a href="#"><img src="./images/logo.svg" alt=""></a></h1>
+                        <span class="header-search-wrap">
+                            <a href="#">
+                                <img src="./images/ico_search_header.svg" alt="mobile-sch">
+                            </a>
+                        </span>
+                    </div>
+                </div>
                 <div class="header-top">
                     <div class="header-util">
                         <button type="button" class="search">
@@ -58,7 +120,7 @@
                                                     <a href="javascript:" class="gnb-2depth-link is-arrow">컨슈머 제품</a>
                                                     <ul class="gnb-3depth" id="person">
                                                         <li class="gnb-3depth-item">
-                                                            <a href="#" class="gnb-3depth-link">렌즈교환카메라</a>
+                                                            <a href="#" class="gnb-3depth-link is-arrow">렌즈교환카메라</a>
                                                             <ul class="gnb-4depth">
                                                                 <li class="gnb-4depth-item">
                                                                     <a href="javascript:;" class="gnb-4depth-link">미러리스</a>
@@ -79,7 +141,7 @@
                                                             </div>
                                                         </li>
                                                         <li class="gnb-3depth-item">
-                                                            <a href="#" class="gnb-3depth-link">렌즈</a>
+                                                            <a href="#" class="gnb-3depth-link is-arrow">렌즈</a>
                                                             <ul class="gnb-4depth">
                                                                 <li class="gnb-4depth-item">
                                                                     <a href="javascript:;" class="gnb-4depth-link">RF렌즈</a>
@@ -100,7 +162,7 @@
                                                             </div>
                                                         </li>
                                                         <li class="gnb-3depth-item">
-                                                            <a href="#" class="gnb-3depth-link">컴팩트 카메라</a>
+                                                            <a href="#" class="gnb-3depth-link is-arrow">컴팩트 카메라</a>
                                                             <ul class="gnb-4depth">
                                                                 <li class="gnb-4depth-item">
                                                                     <a href="javascript:;" class="gnb-4depth-link">컴팩트 카메라</a>
@@ -118,7 +180,7 @@
                                                             </div>
                                                         </li>
                                                         <li class="gnb-3depth-item">
-                                                            <a href="#" class="gnb-3depth-link">영상/방송 기기</a>
+                                                            <a href="#" class="gnb-3depth-link is-arrow">영상/방송 기기</a>
                                                             <ul class="gnb-4depth">
                                                                 <li class="gnb-4depth-item">
                                                                     <a href="javascript:;" class="gnb-4depth-link">CINEMA EOS SYSTEM</a>
@@ -148,7 +210,7 @@
                                                             </div>
                                                         </li>
                                                         <li class="gnb-3depth-item">
-                                                            <a href="#" class="gnb-3depth-link">잉크젯프린터</a>
+                                                            <a href="#" class="gnb-3depth-link is-arrow">잉크젯프린터</a>
                                                             <ul class="gnb-4depth">
                                                                 <li class="gnb-4depth-item">
                                                                     <a href="javascript:;" class="gnb-4depth-link">잉크젯 복합기</a>
@@ -174,31 +236,31 @@
                                                                 <strong class="txt">MAXIFY GX7092</strong>
                                                             </div>
                                                         </li>
-                                                        <li class="gnb-3depth-item">
+                                                        <li class="gnb-3depth-item is-line">
                                                             <a href="#" class="gnb-3depth-link">미니 포토 프린터</a>
                                                         </li>
-                                                        <li class="gnb-3depth-item">
+                                                        <li class="gnb-3depth-item is-line">
                                                             <a href="#" class="gnb-3depth-link">쌍안경</a>
                                                         </li>
-                                                        <li class="gnb-3depth-item">
+                                                        <li class="gnb-3depth-item is-line">
                                                             <a href="#" class="gnb-3depth-link">프리젠터</a>
                                                         </li>
-                                                        <li class="gnb-3depth-item">
+                                                        <li class="gnb-3depth-item is-line">
                                                             <a href="#" class="gnb-3depth-link">계산기</a>
                                                         </li>
-                                                        <li class="gnb-3depth-item">
+                                                        <li class="gnb-3depth-item is-line">
                                                             <a href="#" class="gnb-3depth-link">웨어러블 카메라</a>
                                                         </li>
-                                                        <li class="gnb-3depth-item">
+                                                        <li class="gnb-3depth-item is-line">
                                                             <a href="#" class="gnb-3depth-link">정부조달제품</a>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="gnb-2depth-item" style="display: none;">
+                                                <li class="gnb-2depth-item">
                                                     <a href="javascript:" class="gnb-2depth-link is-line">프로</a>
                                                     
                                                 </li>
-                                                <li class="gnb-2depth-item" style="display: none;">
+                                                <li class="gnb-2depth-item">
                                                     <a href="javascript:" class="gnb-2depth-link is-arrow">라운지</a>
                                                     <ul class="gnb-3depth">
                                                         <li class="gnb-3depth-item">
@@ -247,14 +309,14 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="gnb-2depth-item" style="display: none;">
+                                                <li class="gnb-2depth-item">
                                                     <a href="javascript:" class="gnb-2depth-link is-line">매장 안내</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="gnb-1depth-item" style="display: none;">
+                                <li class="gnb-1depth-item">
                                     <a href="#" class="gnb-1depth-link">비즈니스</a>
                                     <div class="gnb-inner">
                                         <div class="gnb-inner-ly">
@@ -446,7 +508,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="gnb-1depth-item" style="display: none;">
+                                <li class="gnb-1depth-item">
                                     <a href="#" class="gnb-1depth-link">회사소개</a>
                                     <div class="gnb-inner">
                                         <div class="gnb-inner-ly">
@@ -557,7 +619,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="gnb-1depth-item" style="display: none;">
+                                <li class="gnb-1depth-item">
                                     <a href="#" class="gnb-1depth-link">이벤트</a>
                                     <div class="gnb-inner">
                                         <div class="gnb-inner-ly">

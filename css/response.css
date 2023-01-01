@@ -1,13 +1,21 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 1200px) {
+/* 데스크탑 */
+@media screen and (max-width: 1224px) {
     .header{padding: 0 10px;}
     .gnb-inner{padding: 0 10px;}
     .gnb-inner-ly{width: 100%;}
 }
 
+@media screen and (max-width: 1080px) {
+    .btn-box{display: none;}
+}
+
+/* 태블릿 */
 @media screen and (max-width: 1024px) {
-    .header{padding: 0 10px;}
-    .gnb-inner{padding: 0 10px;}
-    .gnb-inner-ly{width: 100%;}
+    .header{padding: 0;}
+    .header > .container{height: 70px;}
+    .mobile-menu{display: block;}
+    #header .container .header-mobile-menu-bar{display: block;}
+    .header-top, .header-btm{display: none;}
 }
