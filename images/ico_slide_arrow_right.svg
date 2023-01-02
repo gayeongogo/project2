@@ -1,0 +1,22 @@
+<svg id="ico_pre6" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        stroke: #ccc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_5420" data-name="사각형 5420" class="cls-1" width="50" height="50" rx="12"/>
+  <path id="패스_1012" data-name="패스 1012" class="cls-2" d="M0,20.937,20.064,0,40.129,20.937" transform="translate(35.436 4.936) rotate(90)"/>
+</svg>

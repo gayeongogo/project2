@@ -45,7 +45,7 @@ $('.gnb-3depth-item > a').hover(function(){
 }) */
 
 /* 1depth before 추가 */
-$('.gnb-1depth-link').hover(function(){
+$('.gnb-1depth-link.gnb-main').hover(function(){
     $(this).addClass('on')
 },function(){
     $(this).removeClass('on')
