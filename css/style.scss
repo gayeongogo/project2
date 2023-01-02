@@ -7,6 +7,19 @@ $white-opcity:rgba(255,255,255,.6);
 $orange: rgba(169,108,22, 1);
 $gray: #aaa;
 $black: #222;
+$color-red: #dc000c;
+$color-blue: #0b5cc7;
+$color-fff: #fff;
+$color-000: #000;
+$color-111: #111;
+$color-666: #666;
+$color-999: #999;
+$color-f3f3f3: #f3f3f3;
+$color-f6f6f6: #f6f6f6;
+$color-f9f9f9: #f9f9f9;
+$color-e6e6e6: #e6e6e6;
+$color-eee: #eee;
+$color-ccc: #ccc;
 
 $header-height:100px;
 $gnb-h: 680px;
@@ -26,7 +39,6 @@ $fw-b: 700;
     position: absolute;
     white-space: nowrap;
 }
-
 
 *{
     font-family: 'Roboto', 'Noto Sans KR', Arial, verdana, sans-serif !important;
@@ -51,10 +63,9 @@ $fw-b: 700;
             align-items: center;
             border-bottom: 1px solid rgba(255,255,255,.15);
             .moda-logoBt-wrap{
-                width: 24px;
-                height: 24px; 
                 display: block;
                 a{
+                    width: 150px;
                     display: block;
                     img{
                         width: 100%
@@ -92,10 +103,8 @@ $fw-b: 700;
                     a{
                         color: $white-opcity;
                         font-size: 16px;
-                        &:hover{color: $white}
-                    }
-                    &:nth-child(3) a{
-                        color: $orange;
+                        &:hover{color: $color-red}
+                        transition: .2s;
                     }
                 }
             }
@@ -110,6 +119,17 @@ $fw-b: 700;
             }
             .mobile-menu-footer-button{
                 margin-top: 20px;
+                button{
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background: $color-999;
+                    border-radius: 4px;
+                    margin-right: 5px;
+                    transition: .3s;
+                    &:hover{
+                        background: $white;
+                    }
+                }
             }
             .mobile-menu-footer-sns{
                 margin-top: 20px;
@@ -123,7 +143,7 @@ $fw-b: 700;
                         border-radius: 50%;
                         background: $gray;
                         text-align: center;
-                        transition: 0.3s;
+                        transition: .3s;
                         &:hover{
                             background: $white;
                         }
@@ -293,7 +313,7 @@ $fw-b: 700;
             content: "";
             width: calc(100% - 10px);
             height: 4px;
-            background: red;
+            background: $color-red;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
@@ -317,6 +337,7 @@ $fw-b: 700;
         height: 600px;
         background: skyblue;
         border-top: 1px solid #e6e6e6;
+        display: none;
         &-ly{
             position: relative;
             width: 1200px;
@@ -447,7 +468,7 @@ $fw-b: 700;
         height: 30px;
         padding: 0 10px;
         border-radius: 4px;
-        background: #dc000c;
+        background: $color-red;
         text-align: center;
         display: inline-block;
         color: #fff;

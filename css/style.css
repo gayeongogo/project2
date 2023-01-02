@@ -42,11 +42,10 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .mobile-menu .container .mobile-menu-bar .moda-logoBt-wrap {
-  width: 24px;
-  height: 24px;
   display: block;
 }
 .mobile-menu .container .mobile-menu-bar .moda-logoBt-wrap a {
+  width: 150px;
   display: block;
 }
 .mobile-menu .container .mobile-menu-bar .moda-logoBt-wrap a img {
@@ -91,12 +90,10 @@
 .mobile-menu .container .mobile-menu-list ul li a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
+  transition: 0.2s;
 }
 .mobile-menu .container .mobile-menu-list ul li a:hover {
-  color: #fff;
-}
-.mobile-menu .container .mobile-menu-list ul li:nth-child(3) a {
-  color: rgb(169, 108, 22);
+  color: #dc000c;
 }
 .mobile-menu .container .mobile-menu-footer p {
   color: rgba(255, 255, 255, 0.6);
@@ -107,6 +104,17 @@
 }
 .mobile-menu .container .mobile-menu-footer .mobile-menu-footer-button {
   margin-top: 20px;
+}
+.mobile-menu .container .mobile-menu-footer .mobile-menu-footer-button button {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #999;
+  border-radius: 4px;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.mobile-menu .container .mobile-menu-footer .mobile-menu-footer-button button:hover {
+  background: #fff;
 }
 .mobile-menu .container .mobile-menu-footer .mobile-menu-footer-sns {
   margin-top: 20px;
@@ -294,7 +302,7 @@
   content: "";
   width: calc(100% - 10px);
   height: 4px;
-  background: red;
+  background: #dc000c;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -316,6 +324,7 @@
   height: 600px;
   background: skyblue;
   border-top: 1px solid #e6e6e6;
+  display: none;
 }
 .gnb-inner-ly {
   position: relative;
