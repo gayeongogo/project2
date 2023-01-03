@@ -72,7 +72,7 @@ textarea,
 button {
     border: none;
     color: #111;
-    font-family: 'Roboto', $notosans, Arial, AppleGothic, verdana, sans-serif;
+    font-family: 'Roboto', 'Noto Sans KR', Arial, verdana, sans-serif;
 }
 
 ul,
@@ -149,6 +149,17 @@ button {
     cursor: pointer;
 }
 
+#skip{
+    z-index:99999;position:relative;width:100%;height:auto;font-size:0;
+    >li{
+        width:100%;height:auto;font-size:0;
+        >a{
+            display:block;padding:0;font-size:0;text-align:center;color:#fff;background:#000;
+            &:focus{padding:20px;font-size:16px;}
+        }
+    }
+}
+
 // select {
 //     @include wh (100%, 4.5rem);
 //     @include fs($fs14);
@@ -184,10 +195,10 @@ input {
     &[type=date] {
         width: 100%;
         height: 42px;
-        @include fs($fs15);
+        font-size: 15px;
         padding: 0 10px;
-        color: $color-111;
-        background-color: $color-fff;
+        color: #111;
+        background-color: #fff;
         border: 1px solid #e6e6e6;
         border-radius: 4px;
         vertical-align: middle;
@@ -201,7 +212,7 @@ input {
 
     &[readonly],
     &[disabled] {
-        background-color: $color-f9f9f9;
+        background-color: #f9f9f9;
         &:focus {
             border-color: #e6e6e6;
             outline: 0
@@ -213,11 +224,12 @@ input {
     &[type=password].disabled,
     &[type=search].disabled,
     &[type=email].disabled {
-        @include wh (100%, 42px);
-        @include fs($fs15);
+        width: 100%;
+        height: 42px;
+        font-size: 15px;
         padding: 0 10px;
-        color: $color-111;
-        background-color: $color-f9f9f9;
+        color: #111;
+        background-color: #f9f9f9;
         border: 1px solid #e6e6e6;
         border-radius: 4px;
         vertical-align: middle;
@@ -248,11 +260,11 @@ input {
     &[type=number][class*='lg'],
     &[type=date][class*='lg'] {
         height: 50px;
-        @include fs($fs15);
+        font-size: 15px;
         padding: 0 12px;
-        color: $color-111;
-        background-color: $color-fff;
-        border: 1px solid $color-e6e6e6;
+        color: #111;
+        background-color: #fff;
+        border: 1px solid #e6e6e6;
         border-radius: 4px;
         vertical-align: middle;
     }

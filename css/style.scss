@@ -40,7 +40,7 @@ $fw-b: 700;
     white-space: nowrap;
 }
 
-*{
+body{
     font-family: 'Roboto', 'Noto Sans KR', Arial, verdana, sans-serif !important;
 }
 
@@ -475,4 +475,10 @@ $fw-b: 700;
         margin-left: 5px;
         &.black{background: #000;}
     }
+}
+
+/* 메인 */
+#container{
+    padding-top: 100px;
+    padding-bottom: 120px;
 }

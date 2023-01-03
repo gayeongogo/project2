@@ -67,7 +67,7 @@ textarea,
 button {
   border: none;
   color: #111;
-  /* font-family: 'Roboto', $notosans, Arial, AppleGothic, verdana, sans-serif; */
+  font-family: "Roboto", "Noto Sans KR", Arial, verdana, sans-serif;
 }
 
 ul,
@@ -144,25 +144,56 @@ button {
   cursor: pointer;
 }
 
+#skip {
+  z-index: 99999;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 0;
+}
+#skip > li {
+  width: 100%;
+  height: auto;
+  font-size: 0;
+}
+#skip > li > a {
+  display: block;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+  color: #fff;
+  background: #000;
+}
+#skip > li > a:focus {
+  padding: 20px;
+  font-size: 16px;
+}
+
 input[type=tel], input[type=time], input[type=text], input[type=password], input[type=search], input[type=email], input[type=file], input[type=url], input[type=number], input[type=date] {
   width: 100%;
   height: 42px;
+  font-size: 15px;
   padding: 0 10px;
+  color: #111;
+  background-color: #fff;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   vertical-align: middle;
 }
-
+input[readonly], input[disabled] {
+  background-color: #f9f9f9;
+}
 input[readonly]:focus, input[disabled]:focus {
   border-color: #e6e6e6;
   outline: 0;
 }
 input[type=tel].disabled, input[type=text].disabled, input[type=password].disabled, input[type=search].disabled, input[type=email].disabled {
-  /* @include wh (100%, 42px);
-  @include fs($fs15); */
+  width: 100%;
+  height: 42px;
+  font-size: 15px;
   padding: 0 10px;
-  /* color: $color-111;
-  background-color: $color-f9f9f9; */
+  color: #111;
+  background-color: #f9f9f9;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   vertical-align: middle;
@@ -178,11 +209,11 @@ input:focus {
 
 input[type=text][class*=lg], input[type=tel][class*=lg], input[type=time][class*=lg], input[type=text][class*=lg], input[type=password][class*=lg], input[type=search][class*=lg], input[type=email][class*=lg], input[type=file][class*=lg], input[type=url][class*=lg], input[type=number][class*=lg], input[type=date][class*=lg] {
   height: 50px;
-  /* @include fs($fs15); */
+  font-size: 15px;
   padding: 0 12px;
-  /* color: $color-111;
-  background-color: $color-fff;
-  border: 1px solid $color-e6e6e6; */
+  color: #111;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   vertical-align: middle;
 }

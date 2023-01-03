@@ -16,7 +16,7 @@
   white-space: nowrap;
 }
 
-* {
+body {
   font-family: "Roboto", "Noto Sans KR", Arial, verdana, sans-serif !important;
 }
 
@@ -453,4 +453,10 @@
 }
 .gnb-1depth-btn.black {
   background: #000;
+}
+
+/* 메인 */
+#container {
+  padding-top: 100px;
+  padding-bottom: 120px;
 }/*# sourceMappingURL=style.css.map */
