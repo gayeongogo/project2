@@ -459,4 +459,96 @@ body {
 #container {
   padding-top: 100px;
   padding-bottom: 120px;
+}
+
+.contents.page-home {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-kv {
+  position: relative;
+  height: 700px;
+  /* visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s; */
+  /*  &_prograss{
+       &-inner{
+
+       }
+   }
+   &_pager{
+
+   } */
+}
+.main-kv .swiper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+.main-kv_conts {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+.main-kv_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.main-kv_ly {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 1200px;
+  height: 100%;
+}
+.main-kv_desc {
+  margin-top: 180px;
+  margin-left: 78px;
+  width: 600px;
+  /* .desc-state{} */
+}
+.main-kv_desc .desc-txt {
+  display: block;
+  margin-top: 5px;
+  font-size: 19px;
+  line-height: 1.53;
+  letter-spacing: -0.19px;
+  color: #fff;
+}
+.main-kv_desc .desc-tit {
+  display: block;
+  margin-top: 10px;
+  font-size: 66px;
+  line-height: 1.2;
+  color: #fff;
+  word-break: keep-all;
+}
+.main-kv_desc .desc-more {
+  display: inline-block;
+  padding: 14px 32px 15px 32px;
+  line-height: 1;
+  background: #dc000c;
+  color: #fff;
+  margin-top: 50px;
+  border-radius: 28px;
+  font-size: 18px;
+  text-align: center;
+}
+.main-kv_desc .color-000 {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

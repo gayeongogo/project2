@@ -65,3 +65,19 @@ $('.appbarCloseBt').click(function(){
     $('.mobile-menu').stop().animate({left:'-100%'},500);
     $('.header-mobile-menu-bar>div').stop().animate({left:0},500);
 });
+
+
+//swiper
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
