@@ -2,6 +2,8 @@
 
 /* 데스크탑 */
 @media screen and (max-width: 1500px) {
+    .main-kv_img{width: 120%;}
+    .main-kv_desc{margin-top: 140px;}
 }
 
 @media screen and (max-width: 1224px) {
@@ -9,12 +11,20 @@
     .gnb-inner{padding: 0 10px;}
     .gnb-inner-ly{width: 100%;}
     .main-kv_ly{width: 100%;}
-    
+    .main-kv_desc{margin-top: 80px;}
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1090px) {
     .btn-box{display: none;}
-    
+    .main-kv_desc .desc-txt{
+        font-size: 17px;
+    }
+    .main-kv_desc .desc-tit{
+        font-size: 55px;
+    }
+    .main-kv_desc .desc-more {
+        margin-top: 30px;
+    }
     
 }
 
@@ -27,4 +37,51 @@
     .header-top, .header-btm{display: none;}
 
     #container{padding-top: 70px;}
+    .main-kv_desc .desc-txt{
+        font-size: 15px;
+    }
+    .main-kv_desc .desc-tit{
+        font-size: 45px;
+    }
+    .main-kv_desc .desc-more {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-kv_desc{margin-top: 50px;}
+    .main-kv_desc .desc-tit{
+        font-size: 35px;
+    }
+    .main-kv_desc .desc-more {
+        margin-top: 15px;
+        padding: 13px 27px 13px 27px;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .main-kv_desc{margin-top: 30px;}
+    .main-kv_desc .desc-txt{
+        font-size: 11px;
+    }
+    .main-kv_desc .desc-tit{
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .main-kv_desc .desc-more {
+        margin-top: 10px;
+        padding: 10px 22px 10px 22px;
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .main-kv_desc{margin-top: 20px;}
+    .main-kv_desc .desc-tit{
+        line-height: 1.1;
+    }
+    
 }
